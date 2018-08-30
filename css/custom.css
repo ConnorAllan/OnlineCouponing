@@ -1,0 +1,323 @@
+html{
+    background-image: url("../img/churchStreet.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.error{
+    color:red;
+    font-weight: bold;
+}
+.dropdown .dropbtn{
+    display:none;
+}
+#coupon.indie{
+    display: block;
+    margin-bottom:1em;
+    width: 90%;
+}
+#coupon.indie h1{
+    display: block;
+width:100%;
+}
+#coupon.indie p{
+    width:80%;
+    margin:auto;
+    text-align: justify;
+    padding:.5em;
+display: block;
+}
+#coupon a{
+    text-decoration: none;
+    color:black;
+}
+#coupon p{
+    margin:auto;
+    display: block;
+    width:80%;
+    text-align: justify;
+    padding:.5em;
+}
+#coupon h1{
+    padding:.5em;
+    margin:auto;
+    display: block;
+    width:100%;
+}
+#coupon.indie a{
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    text-decoration: none;
+    width: 80%;
+    background-color: crimson;
+    color: white;
+    padding: .75em 1.25em;
+    margin: auto;
+    border: none;
+    border-radius: .25em;
+    cursor: pointer;
+}
+#login{
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius:1em; 
+    padding:1em;
+    top: 30%;
+    left: 40%;
+    position:fixed;
+}
+#login form{
+    background-color:rgba(255, 255, 255, 0);
+    border:none;
+}
+#mainContentPrint{
+    margin:1em 1em 1em 1em;
+    background-color:white;
+}
+#couponPrint h1{
+    text-align:center;
+}
+#couponPrint{
+    padding-left:1em;
+    padding-right:1em;
+    text-align:justify;
+}
+#couponPrint p{
+    padding-top:1em;
+    border-top:.1em solid black;
+}
+#couponPrint img{
+    margin:auto;
+    margin-top:2em;
+    width:50%;
+    display: block;
+}
+body{
+    padding:0;
+    margin: 0;
+}
+#mainContent{
+    margin-left:25%;
+    top: 0%;
+}
+
+/*   Coupons   */
+#coupon{
+    width:40%;
+    background-color:white;
+    margin-top: 1em;
+    display: inline-flex;
+    height: 20em;
+    overflow: hidden;
+    margin-left: 2em;
+    text-align: center;
+}
+#coupon img{
+    width:100%;
+}
+/*   Navigation   */
+.sideMenu{
+    position:fixed;
+    height:100%; 
+    width:25%;     
+    background-color:rgba(255, 245, 240, .75);     
+    top: 0%; 
+}
+.sideMenu img{
+    padding:.5em;
+    width:90%;
+}
+
+nav ul{    
+    margin:0;     
+    padding-left:0;   
+    width:100%; } 
+nav ul li{
+    margin:0;   
+    list-style: none; 
+    font-size: 1em;    
+    list-style-position: unset; 
+} 
+nav ul li a{
+    text-decoration: none;
+    display:block;
+    padding: .8em 1em;
+    color: black;
+}
+nav li a:hover{
+    background-color:lightgray;
+}
+nav li.activePage{
+    background-color:crimson;
+    color:white;
+    padding: .8em 1em;
+    text-align: center;
+}
+.btnLogout{
+    position:fixed;
+    width:25%;
+    bottom:0%;
+}
+@media screen and (max-width: 600px){
+    .sideMenu {
+        width:100%;
+        position:unset;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+        background-color:rgba(255, 245, 240, .75);
+        margin-bottom:1em;
+    }
+    .sideMenu img{
+        width:50%;
+        display: block;
+        margin: auto;
+    }
+    li.dropdown{
+        width:100%;
+        background-color:crimson;
+    }
+
+    nav ul{
+        margin:0;
+        padding:0;
+    }
+
+    nav li {
+        display:none;
+        list-style-type: none;
+    }
+
+    nav li a {
+        display: none;
+        color: crimson;
+        text-align: center;
+        padding: .8em 1em;
+    }
+    nav li a:hover{
+        background-color: lightgray;
+    }
+
+    nav li.activePage {
+        padding: .8em 1em;
+        background-color: crimson;
+        color:white;
+        text-align: center;
+    }
+    .dropdown-content .activePage{
+        background-color:crimson;
+        color:white;
+        text-align: center;
+    }
+    .dropdown-content .activePage:hover{
+        color:black;
+    }
+    #myDropdown a{
+        margin:auto;
+        display:block;
+        text-align: center;
+    }
+    .dropdown .dropbtn{
+        width:100%;
+        display:block;
+        margin: 0;
+        padding: .8em 0em 1em 0em;
+    }
+    #myDropdown{
+        width:100%;
+        background-color: lightgray;
+        color:white;
+        text-align: center;
+    }
+    nav div{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+    nav div a{
+        direction: block;
+        padding: .8em 1em;
+        color:white;
+        text-decoration: none;
+    }
+    #mainContent{
+        position: unset;
+        margin-left:unset;
+    }
+    .btnLogout{
+        position:unset;
+        width:100%;
+    }
+    #coupon{
+        margin-left:1em;
+        width:90%;
+    }
+}
+
+/*   Forms   */
+form{
+    width:95%;
+    margin:auto;
+    border: .1em solid black;
+    background-color:rgba(255, 255, 255, 0.65);
+    padding-bottom: 1em;
+}
+fieldset{
+    border-top:.2em solid black;
+    border-bottom: none;
+    border-left:none;
+    border-right:none;
+}
+@media screen and (max-width: 600px){
+    form{
+        width:100%;
+    }
+}
+
+/*   Input Buttons   */
+#login input[type=submit] {
+    width: 100%;
+    background-color: crimson;
+    color: white;
+    padding: .75em 1.25em;
+    margin: 1em 0;
+    border: none;
+    border-radius: .25em;
+    cursor: pointer;
+}
+input[type=password], input[type=text]{
+    width: 100%;
+    padding: .75em 1.25em;
+    margin: .5em 0;  
+    display: inline-block;
+    border: .0625em solid #ccc;
+    border-radius: .25em;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 80%;
+    background-color: crimson;
+    color: white;
+    padding: .75em 1.25em;
+    margin: auto;
+    border: none;
+    border-radius: .25em;
+    cursor: pointer;
+    display: block;
+}
+input#btnSearch[type=submit] {
+    width:75%;
+    display: block;
+    margin:1em auto;
+}
+input[name=search]{
+    width:90%;
+    display:block;
+    margin:1em auto;
+}
+input[name=Filter]{
+    margin-bottom:1em;
+    display: block;
+    margin:auto;
+}
